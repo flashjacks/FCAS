@@ -25,10 +25,15 @@ This is your command:
 FCAS casfile.cas /options
 
 We are going to discuss the possible options.
+
 /N /D /T /F : Here we select the baud rate. It ranges from 1200, 2400, 3000 and 3600 respectively with 1200bps being the default speed.
+
 /B : Bypass function. This function does not require a file as it takes the data from the audio input of the Flashjacks from a real Cassette. In addition, it performs the bypass function where it synthesizes the source wave and extracts a recovered and enhanced wave through the audio output. Come on, it is redigitalized at the cassette data level and resynthesized again.
+
 /I : Apart from the audio output, it reintegrates the data by sending it through the MSX bus. This only works on MSX that have the Busdir operating with a bidirectional buffer (what the MSX standard said). Unfortunately only a few MSX carry it (Ex: NMS8250) so if it does not load you with this option without an analog cable, then you will have to make use of it and discard this option.
+
 /R : With this option we leave the MSX in a clean environment, without interference with the FJ. It disables all the expansions, especially the RAM, leaving the MSX with its basic Basic functions. This is due to the poor compatibility of cassette programs and games with RAM expansions. Remember to put their corresponding POKEs on the MSX2, as we did in the past. Without this option we will be able to run in Basic with all the functionalities of the FJ but with the limitations of its original Cassette programs. We can also remove the RAM from the bootmenu and enter without this command for greater compatibility but this option is not viable in 64k MSX, so this function allows the loading of MSXDOS with the RAM expansion of the FJ and then with this function , once loaded the .CAS, leave us a clean environment in 64k.
+
 /H : Author's notes. Enter if you want to know more about ...
  
 Otherwise comment on several things.
